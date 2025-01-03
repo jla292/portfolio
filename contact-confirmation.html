@@ -1,0 +1,61 @@
+<?php
+$page_title = '💬 Contact';
+
+$nav_home_class = '';
+$nav_about_class = '';
+$nav_skills_class = '';
+$nav_contact_class = 'active_page';
+
+$form_name = $_POST['name'];
+$form_email = $_POST['email'];
+$form_message = $_POST['message'];
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jennifer Ai is a sophomore Information Science Systems and Technology student at Cornell University concentrating in Data Science and User Experience Design.">
+  <title><?php echo $page_title; ?> - Jennifer Ai's Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="/public/styles/site.css">
+
+  <!-- Source: https://openclipart.org/download/12848/SABROG-Glass-Blue-Ball.svg -->
+  <link rel="icon" href="favicon.svg">
+</head>
+
+
+<body>
+
+    <header>
+        <h1 id="title"><?php echo $page_title; ?> - Jennifer Ai's Portfolio</h1>
+
+        <nav class="navigation-menu">
+            <ul>
+                <li class="<?php echo $nav_home_class; ?>"><a href="/">Projects</a></li>
+                <li class="<?php echo $nav_about_class; ?>"><a href="/about">About</a></li>
+                <li class="<?php echo $nav_skills_class; ?>"><a href="/skills">Skills</a></li>
+                <li class="<?php echo $nav_contact_class; ?>"><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h2>Thank you for leaving a note!</h2>
+        <p>
+            I have recieved your message, and I will get back to you shortly.
+        </p>
+
+        <h2>Message Confirmation</h2>
+        <ul>
+            <li>Your name: <?php echo htmlspecialchars($form_name); ?></li>
+            <li>Your email: <?php echo htmlspecialchars($form_email); ?></li>
+            <li>Your message: <?php echo htmlspecialchars($form_message); ?></li>
+        </ul>
+    </main>
+
+    <?php include('includes/footer.php'); ?>
+</body>
+</html>

@@ -1,20 +1,33 @@
-<?php
-$page_title = '💬 Contact';
-
-$nav_home_class = '';
-$nav_about_class = '';
-$nav_skills_class = '';
-$nav_contact_class = 'active_page';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include('includes/meta.php'); ?>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jennifer Ai is a sophomore Information Science Systems and Technology student at Cornell University concentrating in Data Science and User Experience Design.">
+  <title>💬 Contact - Jennifer Ai's Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="/public/styles/site.css">
+
+  <!-- Source: https://openclipart.org/download/12848/SABROG-Glass-Blue-Ball.svg -->
+  <link rel="icon" href="favicon.svg">
+</head>
+
 
 <body>
 
-    <?php include('includes/header.php'); ?>
+    <header>
+        <h1 id="title">💬 Contact - Jennifer Ai's Portfolio</h1>
+
+        <nav class="navigation-menu">
+            <ul>
+                <li class=""><a href="/">Projects</a></li>
+                <li class=""><a href="/about">About</a></li>
+                <li class=""><a href="/skills">Skills</a></li>
+                <li class="active_page"><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
 
     <main>
         <div class="pair-text-image">
@@ -55,7 +68,26 @@ $nav_contact_class = 'active_page';
         </div>
     </main>
 
-    <?php include('includes/footer.php'); ?>
+    <footer>
+        <div class="footer-contact">
+            <h2>Thanks for viewing my portfolio!</h2>
+            <h3>Contact me:</h3>
+            <div class="contact-emojis">
+                📧 <a href="mailto:jla292@cornell.edu">jla292@cornell.edu</a> | 📞 +1(214)-277-9317 | LinkedIn: <a href="https://www.linkedin.com/in/jenniferaiii/">@jenniferaiii</a>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <div>
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/skills">Skills</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
